@@ -27,4 +27,4 @@ dotnet test
 ```
 
 ## Not
-Testler sayesinde **Türkçe locale bug'?** yakaland?: `ToLower()` Türkçe sistemlerde `I ? ?` (noktas?z) dönü?ümü yapt??? için email e?le?mesi bozuluyordu. Çözüm: `ToLowerInvariant()`.
+Testler sayesinde **Türkçe locale bug'ı** yakalandı: `ToLower()` Türkçe sistemlerde `I → ı` (noktasız) dönüşümü yaptığı için email eşleşmesi bozuluyordu. Çözüm: `ToLowerInvariant()`.
