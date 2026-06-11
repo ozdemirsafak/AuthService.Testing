@@ -1,4 +1,4 @@
-# ?? AuthService.Testing — Unit & Integration Tests
+# ?? AuthService.Testing â€” Unit & Integration Tests 
 
 JWT tabanl? kullan?c? kay?t/giri? servisinin xUnit ile yaz?lm?? Unit ve Integration testleri.
 
@@ -10,13 +10,13 @@ JWT tabanl? kullan?c? kay?t/giri? servisinin xUnit ile yaz?lm?? Unit ve Integrat
 - BCrypt ?ifre hashleme + JWT
 
 ## Testler (21 adet)
-- **14 Unit Test:** Servis katman? — kay?t validasyonlar?, duplicate email, ?ifre hashleme, JWT üretimi, case-insensitive email
-- **7 Integration Test:** Gerçek HTTP istekleriyle endpoint testleri — status kodlar?, tam kay?t?login ak???
+- **14 Unit Test:** Servis katman? â€” kay?t validasyonlar?, duplicate email, ?ifre hashleme, JWT Ã¼retimi, case-insensitive email
+- **7 Integration Test:** GerÃ§ek HTTP istekleriyle endpoint testleri â€” status kodlar?, tam kay?t?login ak???
 
-## Çal??t?rma
+## Ã‡al??t?rma
 ```bash
 dotnet test
 ```
 
 ## Not
-Testler sayesinde **Türkçe locale bug'?** yakaland?: `ToLower()` Türkçe sistemlerde `I ? ?` (noktas?z) dönü?ümü yapt??? için email e?le?mesi bozuluyordu. Çözüm: `ToLowerInvariant()`.
+Testler sayesinde **TÃ¼rkÃ§e locale bug'?** yakaland?: `ToLower()` TÃ¼rkÃ§e sistemlerde `I ? ?` (noktas?z) dÃ¶nÃ¼?Ã¼mÃ¼ yapt??? iÃ§in email e?le?mesi bozuluyordu. Ã‡Ã¶zÃ¼m: `ToLowerInvariant()`.
