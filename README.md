@@ -25,6 +25,5 @@ JWT tabanlı kullanıcı kayıt/giriş servisinin xUnit ile yazılmış Unit ve 
 ```bash
 dotnet test
 ```
-
 ## Not
 Testler sayesinde **Türkçe locale bug'ı** yakalandı: `ToLower()` Türkçe sistemlerde `I → ı` (noktasız) dönüşümü yaptığı için email eşleşmesi bozuluyordu. Çözüm: `ToLowerInvariant()`.
